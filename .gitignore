@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+*.pyc
+# dlt secrets must never be committed
+.dlt/secrets.toml

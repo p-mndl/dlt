@@ -1,0 +1,7 @@
+# [az] = adlfs/fsspec for dlt's bookkeeping files, [deltalake] = delta-rs Delta writer.
+# The same version is pinned in fabric/NB_dlt_runner.Notebook — keep them in sync.
+dlt[az,deltalake]==1.29.0
+# Deploy script + raw archive + replay talk to OneLake through the ADLS Gen2 SDK.
+azure-storage-file-datalake>=12.14.0
+# AzureCliCredential for the deploy script (runtime code uses FABRIC_STORAGE_TOKEN instead).
+azure-identity>=1.17.0
